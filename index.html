@@ -77,9 +77,12 @@
             postcode : data.postcode,
             zonecode : data.zonecode,
             addr : fullRoadAddr,
-            extraRoadAddr : extraRoadAddr,
-            fullAddr : fullAddr,
-            data : data
+            jibunAddress : data.jibunAddress,
+            sido : data.sido,
+            sigungu : data.sigungu
+            sigunguCode : data.sigunguCode
+            bcode : data.bcode
+            bname : data.bname
         };
         
         window.postMessageToiOS(postData);
