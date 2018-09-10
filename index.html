@@ -84,8 +84,8 @@
             bcode : data.bcode,
             bname : data.bname
         };
-        window.SssdApps.setAddr("aaa");
-        window.SssdApps.setData(postData);
+        window.SssdApps.setAddr(String(aaa));
+        window.SssdApps.setData(String(postData));
         window.postMessageToiOS(postData);
       },
       width : '100%',
