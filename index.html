@@ -84,8 +84,8 @@
             bcode : data.bcode,
             bname : data.bname
         };
-        window.SssdApps.setAddr(String(postData));
-        window.SssdApps.setData(String(postData));
+        window.SssdApps.setAddr(addr ,jibunAddress, sido,sigungu,sigunguCode );
+        window.SssdApps.setData(addr ,jibunAddress, sido,sigungu,sigunguCode);
         window.postMessageToiOS(postData);
       },
       width : '100%',
