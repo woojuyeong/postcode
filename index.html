@@ -30,7 +30,6 @@
   
   function postMessageToiOS(postData) {
       window.webkit.messageHandlers.callBackHandler.postMessage(postData);
-      window.sssd.setData(postData);
   };
   
   var element_layer = document.getElementById('layer');
@@ -85,7 +84,7 @@
             bcode : data.bcode,
             bname : data.bname
         };
-        window.SssdApps.setAddr(data.addr);
+        window.SssdApps.setAddr("aaa");
         window.SssdApps.setData(postData);
         window.postMessageToiOS(postData);
       },
