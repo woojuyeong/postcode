@@ -1,5 +1,6 @@
 <html>
-  <script type = "text/javascript" charset= "UTF-8" >
+  <head>
+  <script type="text/javascript">
     function callNative() {
         var postData = {
             eventType : "couponCode Event",
@@ -12,9 +13,10 @@
       window.webkit.messageHandlers.callBackHandler.postMessage(postData);
   };
   </scrpit>
+  </head>
+    
   <body>
   <input type ="button" onclick = "callNative()" value = "ㅌㅌㅌㅌ">
-
   </body>
     
     
