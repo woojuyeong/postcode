@@ -1,1 +1,21 @@
-asdfasdgsdag
+<html>
+  <script type = "text/javascript" charset= "UTF-8" >
+    function callNative() {
+        var postData = {
+            eventType : "couponCode Event",
+        };      
+      
+        window.postMessageToiOS(postData);
+    };
+    
+    function postMessageToiOS(postData) {
+      window.webkit.messageHandlers.callBackHandler.postMessage(postData);
+  };
+  </scrpit>
+  <body>
+  <input type ="button" onclick = "callNative()" value = "ㅌㅌㅌㅌ">
+
+  </body>
+    
+    
+</html>
