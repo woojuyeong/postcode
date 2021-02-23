@@ -12,7 +12,7 @@
     };
     
     function postMessageToiOS(postData) {
-      window.webkit.messageHandlers.callBackHandler.postMessage(postData);
+      window.webkit.messageHandlers.onWebEvent.postMessage(postData);
   };
   </script>
   </head>
