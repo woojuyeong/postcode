@@ -33,6 +33,7 @@
     
         function getMessage() {
             window.webkit.messageHandlers.getUserId.postMessage('');
+            window.webkit.messageHandlers.callBackHandler.postMessage('');
         }
     
         function returnMessage(text) {
