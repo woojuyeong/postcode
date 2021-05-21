@@ -32,7 +32,9 @@
         }
     
         function getMessage() {
-            window.webkit.messageHandlers.callBackHandler.postMessage('getUserId');
+            var userId = window.SssdApps.getUserId();
+            returnMessage(userId);
+//            window.webkit.messageHandlers.callBackHandler.postMessage('getUserId');
         }
     
         function returnMessage(text) {
@@ -44,7 +46,7 @@
                 'action': 'call',
                 'function': 'returnFunction'
             };
-            window.webkit.messageHandlers.callBackHandler.postMessage(message);
+            //window.webkit.messageHandlers.callBackHandler.postMessage(message);
         }
     
         function returnFunction(text) {
