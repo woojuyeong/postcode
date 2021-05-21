@@ -32,7 +32,7 @@
         }
     
         function getMessage() {
-            window.webkit.messageHandlers.callBackHandler.postMessage('getUserId');
+            window.webkit.messageHandlers.getUserId.postMessage(nil);
         }
     
         function returnMessage(text) {
