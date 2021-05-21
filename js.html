@@ -24,7 +24,7 @@
                 'action': 'bind',
                 'name': 'message'
             };
-            window.webkit.messageHandlers.test.postMessage(message);
+            window.webkit.messageHandlers.callBackHandler.postMessage(message);
         }
     
         function test() {
@@ -32,7 +32,7 @@
         }
     
         function getMessage() {
-            window.webkit.messageHandlers.test.postMessage('getMessage');
+            window.webkit.messageHandlers.callBackHandler.postMessage('getMessage');
         }
     
         function returnMessage(text) {
@@ -44,7 +44,7 @@
                 'action': 'call',
                 'function': 'returnFunction'
             };
-            window.webkit.messageHandlers.test.postMessage(message);
+            window.webkit.messageHandlers.callBackHandler.postMessage(message);
         }
     
         function returnFunction(text) {
